@@ -12,9 +12,8 @@ const Footer = () => {
         className={clsx(
           "flex flex-col items-center pt-12 pb-10 w-full",
           "md:flex-row md:justify-between md:px-14 md:py-10",
-          "lg:max-w-[68rem]",
-          "xl:max-w-[70rem]",
-          "2xl:max-w-[73rem]",
+          "lg:max-w-[60.25rem] lg:px-0",
+          "xl:max-w-[62rem]",
         )}
       >
         <div className={clsx("md:flex md:gap-14 md:items-center")}>
@@ -28,13 +27,37 @@ const Footer = () => {
             )}
           >
             <li>
-              <Link href="/pricing">Pricing</Link>
+              <Link
+                href="/pricing"
+                className={clsx(
+                  "transition-colors duration-300",
+                  "hover:text-san-juan-blue-50",
+                )}
+              >
+                Pricing
+              </Link>
             </li>
             <li>
-              <Link href="/about">About</Link>
+              <Link
+                href="/about"
+                className={clsx(
+                  "transition-colors duration-300",
+                  "hover:text-san-juan-blue-50",
+                )}
+              >
+                About
+              </Link>
             </li>
             <li>
-              <Link href="/contact">Contact</Link>
+              <Link
+                href="/contact"
+                className={clsx(
+                  "transition-colors duration-300",
+                  "hover:text-san-juan-blue-50",
+                )}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
@@ -46,10 +69,10 @@ const Footer = () => {
             <Facebook className="w-9" />
           </Link>
           <Link href="">
-            <Twitter className="w-7" />
+            <Twitter className="w-7 hover:fill-red-800" />
           </Link>
           <Link href="">
-            <Linkedin className="w-7" />
+            <Linkedin className="w-7 hover:fill-red-800" />
           </Link>
         </ul>
       </div>

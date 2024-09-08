@@ -14,9 +14,8 @@ const Header = () => {
       className={clsx(
         "w-full pt-9 px-5 flex justify-between items-center top-0 z-20",
         "md:px-8 md:static md:justify-normal md:gap-14",
-        "lg:max-w-[68rem]",
-        "xl:max-w-[70rem]",
-        "2xl:max-w-[73rem]",
+        "lg:max-w-[60.25rem] lg:px-0",
+        "xl:max-w-[62rem]",
       )}
     >
       <div>

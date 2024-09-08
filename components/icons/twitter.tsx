@@ -1,13 +1,16 @@
+import clsx from "clsx";
+
 type IconProps = React.SVGProps<SVGSVGElement>;
 
-const Twitter: React.FC<IconProps> = (props) => {
+const Twitter: React.FC<IconProps> = ({ className, ...rest }) => {
   return (
     <svg
       viewBox="0 -2 20 20"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      {...props}
+      {...rest}
+      className={clsx(className, "group")}
     >
       <title>twitter [#154]</title>
       <desc>Created with Sketch.</desc>
@@ -23,6 +26,7 @@ const Twitter: React.FC<IconProps> = (props) => {
           id="Dribbble-Light-Preview"
           transform="translate(-60.000000, -7521.000000)"
           fill="#fff"
+          className="group-hover:fill-san-juan-blue-50 transition-colors duration-300"
         >
           <g id="icons" transform="translate(56.000000, 160.000000)">
             <path

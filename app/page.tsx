@@ -57,6 +57,7 @@ export default function Home() {
               placeholder="Enter email address"
               className={clsx(
                 "w-full rounded-full text-lg px-6 py-3 font-dm-serif mb-4 shadow-md",
+                "hover:shadow-lg",
                 "md:mb-0 md:pr-52",
               )}
             />
@@ -64,6 +65,7 @@ export default function Home() {
               type="submit"
               className={clsx(
                 "w-full bg-dark-pink text-water-white p-[0.9rem] rounded-full font-bold mb-5",
+                "hover:bg-charm-pink transition-colors duration-300",
                 "md:absolute md:top-0 md:bottom-0 md:right-0 md:w-fit md:mb-0 md:px-8 md:h-full md:py-0",
               )}
             >
