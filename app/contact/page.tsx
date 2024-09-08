@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import React from "react";
 import clsx from "clsx";
 import Header from "@/components/ui/header";
@@ -5,6 +6,10 @@ import Footer from "@/components/ui/footer";
 import Sponsors from "@/components/ui/sponsors";
 import Ready from "@/components/ui/ready";
 import ContactForm from "@/components/ui/contact-form";
+
+export const metadata: Metadata = {
+  title: "Contact",
+};
 
 const Contact = () => {
   return (

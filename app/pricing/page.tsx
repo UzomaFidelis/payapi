@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import React from "react";
 import clsx from "clsx";
 import pricing_data from "@/lib/data";
@@ -5,6 +6,10 @@ import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
 import Ready from "@/components/ui/ready";
 import CheckMark from "@/components/icons/checkmark";
+
+export const metadata: Metadata = {
+  title: "Pricing",
+};
 
 const Pricing = () => {
   return (

@@ -1,8 +1,13 @@
+import { Metadata } from "next";
 import Header from "@/components/ui/header";
 import Image from "next/image";
 import clsx from "clsx";
 import Ready from "@/components/ui/ready";
 import Footer from "@/components/ui/footer";
+
+export const metadata: Metadata = {
+  title: "About",
+};
 
 export default function About() {
   return (
