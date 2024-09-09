@@ -12,7 +12,13 @@ import Sponsors from "@/components/ui/sponsors";
 export default function Home() {
   return (
     <div
-      className={clsx("bg-pale-blue", "lg:flex lg:flex-col lg:items-center")}
+      className={clsx(
+        "bg-pale-blue",
+        "bg-circle bg-no-repeat bg-[center_top_-30rem]",
+        "md:bg-[length:70rem] md:bg-[center_top_-43rem]",
+        "lg:bg-[length:35rem] lg:bg-[right_-8rem_top_-4rem]",
+        "lg:flex lg:flex-col lg:items-center",
+      )}
     >
       <Header />
       <div
@@ -80,9 +86,22 @@ export default function Home() {
           </span>
         </div>
       </div>
-      <main className={clsx("w-full", "lg:flex lg:flex-col lg:items-center")}>
+      <main
+        className={clsx(
+          "w-full bg-pale-blue",
+          "lg:flex lg:flex-col lg:items-center",
+          "lg:bg-circle lg:bg-no-repeat lg:bg-[length:35rem]",
+          "lg:bg-[right_-18rem_top_60rem]",
+        )}
+      >
         <div
-          className={clsx("bg-mirage-blue w-full", "lg:flex lg:justify-center")}
+          className={clsx(
+            "bg-mirage-blue w-full",
+            "bg-circle bg-no-repeat bg-[center_top_-32rem]",
+            "md:bg-[length:70rem] md:bg-[center_top_-50rem]",
+            "lg:bg-[length:42rem] lg:bg-[left_-8rem_top_-7rem]",
+            "lg:flex lg:justify-center",
+          )}
         >
           <div
             className={clsx(
@@ -131,10 +150,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         <div
           className={clsx(
-            "pt-[5.6rem] px-4 pb-[6.3rem] bg-pale-blue",
+            "pt-[5.6rem] px-4 pb-[6.3rem] ",
             "md:px-16 md:pb-[8.4rem]",
             "lg:w-[80vw] lg:max-w-[60.25rem] lg:box-border lg:px-0 lg:py-[8.5rem]",
             "xl:max-w-[62rem]",

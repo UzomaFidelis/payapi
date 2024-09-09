@@ -11,7 +11,14 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <div className={clsx("bg-pale-blue")}>
+    <div
+      className={clsx(
+        "bg-pale-blue",
+        "bg-circle bg-no-repeat bg-[center_top_-30rem]",
+        "md:bg-[length:70rem] md:bg-[center_top_-50rem]",
+        "lg:bg-[length:35rem] lg:bg-[right_-8rem_top_-10rem]",
+      )}
+    >
       <div className="flex  flex-col items-center">
         <Header />
       </div>
@@ -26,7 +33,8 @@ export default function About() {
           className={clsx(
             "pt-[4.5rem] px-6",
             "md:pt-12 md:flex md:flex-col md:items-center md:px-10",
-            "lg:items-start lg:px-10 lg:pt-16 lg:max-w-[64rem]",
+            "lg:items-start lg:px-0 lg:pt-16 lg:max-w-[60.25rem]",
+            "xl:max-w-[62rem]",
           )}
         >
           <p
@@ -111,7 +119,7 @@ export default function About() {
             className={clsx("hidden", "lg:block")}
           />
         </div>
-        <div className={clsx("lg:max-w-[65rem]")}>
+        <div className={clsx("lg:max-w-[60.25rem]", "xl:max-w-[62rem]")}>
           <div
             className={clsx(
               "relative flex flex-col items-center gap-7 py-[2.7rem] mb-[3.5rem] w-full",
@@ -119,7 +127,7 @@ export default function About() {
               "after:absolute after:bottom-0 after:w-[80%] after:h-[1px] after:bg-light-pale after:left-[50%] after:translate-x-[-50%]",
               "md:flex-row md:items-start md:justify-center md:gap-[5rem] md:px-10 md:py-0 md:mb-[6rem]",
               "md:before:hidden md:after:hidden",
-              "lg:justify-start lg:gap-[2rem]",
+              "lg:justify-start lg:gap-[2rem] lg:px-0",
             )}
           >
             <div
@@ -165,7 +173,7 @@ export default function About() {
               <p className="font-bold text-[3.4rem] text-dark-pink">10M+</p>
             </div>
           </div>
-          <div className={clsx("px-6 mb-24", "md:px-10 md:mb-28")}>
+          <div className={clsx("px-6 mb-24", "md:px-10 md:mb-28", "lg:px-0")}>
             <div className={clsx("mb-12", "md:flex md:gap-2 md:mb-20")}>
               <h2
                 className={clsx(
@@ -210,7 +218,13 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className={clsx("px-4 w-full", "lg:px-12")}>
+        <div
+          className={clsx(
+            "px-4 w-full",
+            "lg:px-0 lg:max-w-[60.25rem]",
+            "xl:max-w-[62rem]",
+          )}
+        >
           <Ready />
         </div>
       </main>

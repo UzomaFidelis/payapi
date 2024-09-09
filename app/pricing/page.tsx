@@ -13,7 +13,14 @@ export const metadata: Metadata = {
 
 const Pricing = () => {
   return (
-    <div className={clsx("bg-pale-blue")}>
+    <div
+      className={clsx(
+        "bg-pale-blue",
+        "bg-circle bg-no-repeat bg-[center_top_-30rem]",
+        "md:bg-[length:70rem] md:bg-[center_top_-50rem]",
+        "lg:bg-[length:35rem] lg:bg-[right_-8rem_top_-4rem]",
+      )}
+    >
       <div className="flex flex-col items-center">
         <Header />
       </div>
@@ -22,15 +29,15 @@ const Pricing = () => {
           className={clsx(
             "pb-[6.4rem] pt-[4.5rem] px-6",
             "md:pt-[5rem] md:flex md:flex-col md:items-center md:pb-[9rem]",
-            "lg:max-w-[60.25rem]",
-            "xl:max-w-[65rem]",
+            "lg:max-w-[60.25rem] lg:px-0",
+            "xl:max-w-[62rem]",
           )}
         >
           <h1
             className={clsx(
               "text-san-juan-blue-100 text-center font-bold text-4xl mb-[2.6rem]",
               "md:text-5xl md:mb-[6rem]",
-              "lg:text-left lg:w-full lg:px-8",
+              "lg:text-left lg:w-full lg:px-0",
             )}
           >
             Pricing
@@ -39,6 +46,7 @@ const Pricing = () => {
             className={clsx(
               "mb-32",
               "md:flex md:justify-center md:px-8 gap-4 md:mb-24",
+              "lg:px-0",
             )}
           >
             <li

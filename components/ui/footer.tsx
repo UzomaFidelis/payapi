@@ -7,7 +7,13 @@ import clsx from "clsx";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-mirage-blue flex justify-center">
+    <footer
+      className={clsx(
+        "w-full bg-mirage-blue flex justify-center",
+        "bg-circle bg-no-repeat bg-[center_bottom_-36.5rem]",
+        "lg:bg-[right_-20rem_bottom_-20rem]",
+      )}
+    >
       <div
         className={clsx(
           "flex flex-col items-center pt-12 pb-10 w-full",

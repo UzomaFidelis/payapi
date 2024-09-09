@@ -112,6 +112,7 @@ const Navbar = ({
               href=""
               className={clsx(
                 "bg-dark-pink rounded-full font-bold px-8 py-4",
+                "inline-block",
                 "md:text-water-white md:bg-dark-pink transition-colors duration-300 hover:bg-charm-pink",
               )}
             >
